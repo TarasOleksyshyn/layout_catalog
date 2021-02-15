@@ -15,7 +15,7 @@
     width: 160px;
     height: 134px;
     margin: 15px 5px 42px;
-    transition-duration: 1s;
+    transition: transform 1s, border 1s;
   }
 
   &__image:hover {
@@ -91,7 +91,7 @@
     font-weight: 700;
     color: $white;
     text-align: center;
-    transition-duration: 1s;
+    transition: color 1s, background-color 1s, border 1s;
   }
 
   &__button:hover {
