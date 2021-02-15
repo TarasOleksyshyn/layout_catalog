@@ -2,7 +2,7 @@
   width: 200px;
   padding: 15px 14px;
 
-  border: 1px solid #f3f3f3;
+  border: 1px solid $border-color;
   border-radius: 5px;
   background-color: $white;
 
@@ -11,9 +11,16 @@
   }
 
   &__image {
+    display: inline-block;
     width: 160px;
     height: 134px;
     margin: 15px 5px 42px;
+    transition: transform 1s, border 1s;
+  }
+
+  &__image:hover {
+    transform: scale(1.25);
+    border: 3px solid $border-color;
   }
 
   &__name {
@@ -84,6 +91,7 @@
     font-weight: 700;
     color: $white;
     text-align: center;
+    transition: color 1s, background-color 1s, border 1s;
   }
 
   &__button:hover {
